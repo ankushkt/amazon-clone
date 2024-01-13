@@ -28,15 +28,18 @@ function Header() {
               </select>
             </div>
             <div className='bg-white w-48  flex  items-center '>
-              <span className='ml-3 font-bold text-lg'> Search Amazon.in   </span>
+              <span className='ml-3 font-normal text-lg'> Search Amazon.in   </span>
             </div>
             <div className='w-14 bg-yellow-600 '>
               <img className='relative top-3 left-4' src="https://raw.githubusercontent.com/myaduvanshi/amazon-prime/main/src/Components/Images/seacrh.svg" alt="" />
             </div>
           </div>
-          <div className='text-white flex  border-white w-14 p-3'>
-            <img src="https://raw.githubusercontent.com/myaduvanshi/amazon-prime/main/src/Components/Images/indiaFlagIcon.svg" alt="indian flag"  />
-            <span>ENG</span>
+          <div className=' flex w-14 border-none justify-center items-center ml-0'>
+            <img className='size-5' src="https://raw.githubusercontent.com/myaduvanshi/amazon-prime/main/src/Components/Images/indiaFlagIcon.svg" alt="indian flag"  />
+            <span className='text-center text-white'>EN</span>
+            <select className='w-full h-full text-white bg-black border-none' name="category" id="category"> 
+            <li className='list-disc '>हिन्दी - HI - अनुवाद</li>
+             </select>
 
           </div>
 
