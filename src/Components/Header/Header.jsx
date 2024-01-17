@@ -30,21 +30,28 @@ function Header() {
             <div className='bg-white w-48  flex  items-center '>
               <span className='ml-3 font-normal text-lg'> Search Amazon.in   </span>
             </div>
-            <div className='w-14 bg-yellow-600 '>
+            <div className='w-14 bg-yellow-500 '>
               <img className='relative top-3 left-4' src="https://raw.githubusercontent.com/myaduvanshi/amazon-prime/main/src/Components/Images/seacrh.svg" alt="" />
             </div>
           </div>
-          <div className=' flex w-14 border-none justify-center items-center ml-0'>
-            <img className='size-5' src="https://raw.githubusercontent.com/myaduvanshi/amazon-prime/main/src/Components/Images/indiaFlagIcon.svg" alt="indian flag"  />
-            <span className='text-center text-white'>EN</span>
-            <select className='w-full h-full text-white bg-black border-none' name="category" id="category"> 
-            <li className='list-disc '>हिन्दी - HI - अनुवाद</li>
-             </select>
-
+          <div className='dropdowm'>
+            <div className=' flex w-14 border-none justify-center items-center ml-0 mt-5'>
+              <img className='size-5' src="https://raw.githubusercontent.com/myaduvanshi/amazon-prime/main/src/Components/Images/indiaFlagIcon.svg" alt="indian flag" />
+              <span className='text-white '>EN</span>
+            </div>
+            <div className="dropdown-content text-black list-none">
+          <li> <Link to=""> <input type="radio" name="localLang" id="localLang" checked />English- EN </Link></li>
+                            <li> <Link to=""> <input type="radio" name="localLang" id="localLang" />हिन्दी - Hi </Link></li>
+                            <li> <Link to=""> <input type="radio" name="localLang" id="localLang" />தமிழ் - TA </Link></li>
+                            <li> <Link to=""> <input type="radio" name="localLang" id="localLang" />తెలుగు - TE </Link></li>
+                            <li> <Link to=""> <input type="radio" name="localLang" id="localLang" />ಕನ್ನಡ - KN </Link></li>
+                            <li> <Link to=""> <input type="radio" name="localLang" id="localLang" />മലയാളം - ML </Link></li> 
+                            <li> <Link to=""> <input type="radio" name="localLang" id="localLang" />বাংলা - BN </Link></li>
+                            <li> <Link to=""> <input type="radio" name="localLang" id="localLang" />मराठी - MR </Link></li>
           </div>
-
+          </div>
         </div>
-      </header>
+      </header >
     </>
   )
 }
